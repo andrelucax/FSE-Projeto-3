@@ -102,7 +102,7 @@ void RealizaHTTPRequest(void * params)
       xSemaphoreGive(conexaoWifiSemaphore);
     }
 
-    vTaskDelay(1000 * 10 / portTICK_PERIOD_MS);
+    vTaskDelay(1000 * 60 * 5 / portTICK_PERIOD_MS);
   }
 }
 
